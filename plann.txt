@@ -1,0 +1,31 @@
+resources => (1. byte cloud, 2. code spirit )
+----------------------------------------------
+web related resources   
+```````````````````````````````
+w3schools
+geeks for geeks
+javatpoint
+educative.io
+studyToNight
+tutorialspoint
+
+video related resources
+`````````````````````````````````
+apna college
+Jenny's lectures CS/IT NET&JRF
+freecodecamp
+
+practice related resources
+````````````````````````````````````
+exercism.org
+codecheif
+hacker Rank
+hacker Earth
+leet code
+--------------------------------------------
+
+Gallery
+``````````
+https://codepen.io/toshiya-marukubo/pen/gOKMvPZ
+https://codepen.io/Tibixx/pen/xxzLBXb
+https://codepen.io/tianalima/pen/jOKNpeB

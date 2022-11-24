@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Rubik:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Roboto';
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-color: transparent;
+}
+a{
+    text-decoration: none;
+}
+/* 
+    =====================================
+            Nav Bar Styling Mobile
+    =====================================
+*/
+#navbar{
+    background-image: linear-gradient(178.6deg, rgb(20, 36, 50,0.5) 11.8%, rgb(124, 143, 161,0.5) 83.8%),
+    url(./images/pankaj-patel-_SgRNwAVNKw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    padding:10px;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-logo{
+    color:#ffdf2b;
+    font-family: 'IceLand';
+    text-align: center;
+    padding:0.3em;
+    font-size:2em;
+    font-weight: bold;
+    width:2.2em;
+    margin-left:5px;
+    border:3px #fff solid;
+    transition-property:border-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+.logo-bordercolor{
+    border-color: #fff;
+    transition-property:border-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+    z-index: 8;
+}
+.bars-size{
+    font-size:1.5em;
+    cursor: pointer;
+}
+
+#navLinks ul .nav-links a {
+    color:white ;
+}
+.links-container ul li {
+    padding-left:2.5em;
+    margin-top:10px;
+    font-size:18px;
+    line-height: 65px;
+    color:#fff;
+}
+#check{
+    display: none;
+}
+.social-media-logo{
+    color:white;
+    cursor: pointer;
+    font-size: 1.5em;
+    padding-left: 0.7em;
+}
+.insta:hover{
+    color: #FD1D1D;
+    text-shadow: 
+    0 0 7px #405DE6,
+    0 0 15px #5B51D8,
+    0 0 21px #833AB4,
+    0 0 32px #C13584,
+    0 0 55px #E1306C,
+    0 0 69px #FD1D1D,
+    0 0 92px #F56040,
+    0 0 105px #F77737,
+    0 0 121px #FCAF45,
+    0 0 153px #FFDC80;    
+}
+.linkedin:hover{
+    color: #0077BB;
+    text-shadow: 
+    0 0 52px #405DE6,
+    0 0 105px #000000,
+    0 0 150px #FFFFFf,
+}
+@media  screen and (max-width:640px){
+    .links-container{
+        background-color:#010332;
+        padding:4em 0em;
+        width: 50%;
+        position: absolute;
+        top:0em;
+        height: 100vh;
+        z-index: -1;
+        position:absolute;
+        left: -350px;
+        border-bottom-right-radius: 1em;
+        border-top-right-radius: 1em;
+        transition-property:left;
+        transition-duration: 500ms;
+        transition-timing-function: ease-out;
+        z-index: 5;
+
+    }
+    .display-none{
+        transition-property:left;
+        transition-duration: 500ms;
+        transition-timing-function: ease-out;
+        left: 0px;
+    }
+
+}
+/* 
+    ============================================================
+                    Navbar mobile styling ends
+    ============================================================
+*/
+
+@media  screen and (min-width:641px){
+    #bars{
+        display: none;
+    }
+    .links-container ul{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        list-style-type: none;
+        width: 100%;
+    }
+    .links-container{
+        max-width: 60%;
+
+    }
+    .links-container ul li a{
+        color:#000;
+        font-size: 18px;
+        line-height:0px;
+
+    }
+    .links-container ul li a:hover{
+        color:#E1306C;
+    }
+    .social-icons-container{
+        display:none;
+    }
+}
+
+/* 
+    =========================================
+            Navbar Desktop styling ends
+    =========================================
+*/
+/* 
+    =================================================
+            Banner Section Styling Start
+    =================================================
+*/
+.banner-section{
+    height: 92.2vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.text-container{
+    text-align: center;
+}
+.text-container-heading{
+    color:#fff;
+    font-size: 54px;
+}
+.text-container-heading span{
+    color:#ffdf2b;
+}
+.text-container-para{
+    color:#fff;
+    font-size: 46px;
+    font-weight: bold;  
+}
+.auto-type,.typed-cursor{
+    color:#ffdf2b;
+    font-size:44px;
+}
+.typed-cursor{
+    animation: blink 1000ms infinite;
+}
+@keyframes blink{
+    10% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@media screen and (max-width:640px){
+    .bannner-social-icons-container{
+        display: none;
+    }
+}
+@media screen and (min-width:641px){
+    .banner-social-icons-container{
+        position:absolute;
+        bottom:20px;
+        right:20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social-media-logo{
+        padding-bottom: 10px;
+    }
+}
+/* 
+    =================================================
+            Banner Section Styling Ends
+    =================================================
+*/
+
+/* 
+    =================================================
+            About us Section Styling Starts
+    =================================================
+*/
+
+#about-us-section{
+    padding:2em;
+}
+.about-us-text-container p{
+    font-size:18px;
+    margin-top: 10px;
+}
+.about-us-text-container p span{
+    color:#5B51D8;
+}
+button{
+    width: 10em;
+    height: 2.5em;
+    margin:1em 0em;
+    padding:0.5em;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.blue-button{
+    background-color: #405DE6;
+    color:white;
+}
+@media  screen and (min-width:641px){
+    .about-us-text-container{
+        max-width: 50%;
+
+    }
+    .desktop-image{
+        height: 350px;
+        border-radius: 1em;
+        max-width: 40%;
+    }
+    #about-us-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:640px){
+    .hide-mobile{
+        display: none;
+    }
+    
+}
+/* 
+    =================================================
+            About Us Section Styling Ends
+    =================================================
+*/
+
+/* 
+    =================================================
+            Outcomes Section Styling Starts
+    =================================================
+*/
+
+#outcomes-section{
+    padding: 1em;
+    color:#fff;
+    background-image:url(./images/safar-safarov-koOdUvfGr4c-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top:1em;
+    text-align: center;
+    width: 100%;
+}
+#outcomes-section h2{
+    font-size: 28px;
+    padding-bottom: 0.5em;
+}
+.outcomes-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.outcomes-card{
+    background-color: #fff;
+    padding:1em;
+    border-radius: 10px;
+    width: 80%;
+    margin:0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.outcome-card-image{
+    height: 10em;
+    position:relative;
+    left:10px;
+}
+.outcome-card-text-container{
+    color:#010332;
+    text-align: center;
+}
+.outcome-card-text-container h3  span{
+    color:#405DE6;
+}
+@media screen and (min-width:641px){
+    .outcomes-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: auto;
+    }
+    .outcomes-card{
+        width: 45%;
+    }
+
+}
+
+/* 
+    =================================================
+                Outcomes Section Styling Ends
+    =================================================
+*/
+
+/* 
+    =================================================
+                Timeline Section Styling Starts
+    =================================================
+*/
+#timeline-section{
+    background-color: #1E293B;
+    padding: 1em;
+}
+#timeline-section h2{
+    color:#ffffff;
+    text-align: center;
+    margin-bottom: 0.4em;
+}
+.order-part > h4{
+    color: #fff;
+    background-color: #2563EB;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding:5px 10px;
+    
+}
+.timeline-card-top-part{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+
+}
+.timeline-section-heading{
+    color:#fff;
+    margin-left: 0.5em;
+}
+.skill-card{
+    background: rgba( 60, 48, 48, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    margin:0.8em 0em;
+    align-self: flex-end;
+    color:white;
+
+}
+.skills-card-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.skill-card-img{
+    height: 100px;
+    width: 100%;
+}
+.lottie-img{
+    height: 10em;
+    width: 10em;
+    margin: auto;
+
+}
+.skill-icon{
+    color:#F56040;
+    font-size: 2em;
+    margin-bottom: 0.3em;
+}
+.css{
+    color: #2563EB;
+}
+.js{
+    color:#ffaa1d;
+}
+.react{
+    color: #2563EB;
+}
+.nodejs{
+    color:#fff;
+}
+.skill-card p{
+    font-size:14px;
+    margin-top:4px;
+}
+.order-part div{
+    width:2px;
+    height: auto;
+    background-color: #2563EB;
+}
+@media screen and (min-width:641px){
+    .skills-card-container{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        position: relative;
+        left:-8%;
+    }
+    .skill-card{
+        margin: 0.5em;
+        height:18em;
+        display: flex;
+        width:13em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .timeline-card-top-part{
+        margin: auto;
+    }
+    .timeline-card{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* 
+    =================================================
+                Timeline Section Styling Ends
+    =================================================
+*/
+
+/* 
+    =================================================
+                Team Section Styling Starts
+    =================================================
+*/
+
+
+#teamSection{
+    padding: 1em;
+    /* background-image: linear-gradient( 105.5deg,  rgba(31,212,248,1) 11%, rgba(218,15,183,1) 74.9% ); */
+}
+#teamSection h2{
+    color:#fff;
+    text-align: center;
+    margin-bottom: 0.4em;
+}
+.profile-card{
+    background-color: #fff;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1em;
+    background-color: transparent;
+    height: 20em;
+}
+.profile-card-header{
+    background: rgba(255,255,255,0.3);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(28px);
+    border: 1px solid rgba(255,255,255,0.25);
+    height: 30%;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image{
+    height:6em;
+    width: 6em;
+    border-radius: 50%;
+    position: absolute;
+    top:2.8em;
+
+}
+.profile-card-bottom-section{
+    background-color: #fff;
+    height: 70%;
+    border-bottom-left-radius:2em;
+    border-bottom-right-radius: 2em;
+    text-align: center;
+    padding-top: 3em;
+
+}
+.person-name{
+    font-size: 22px;
+    font-weight: 700;
+}
+.person-role{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+.skills-container{
+    text-align: left;
+    font-size: 22px;
+    padding-left: 1em;
+
+}
+.lan-card{
+    color: white;
+    background-color: #2563EB;
+    width: 30%;
+    font-size: 14px;
+    padding: 0.4em;
+    border-radius: 2em;
+    text-align: center;
+    margin: 0.3em;
+}
+.lan-card:hover{
+    transition: 0.8s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.lan-cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.social-handles{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.8em;
+}
+.mail:hover{
+    color:#454950;
+}
+.portfolio:hover{
+    transition: 0.8s;
+    transform: scale(1.1);
+
+}
+@media screen and (min-width:641px){
+    .profile-card{
+        width:35%;
+        margin: 1em;
+    }
+    .profile-cards-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* 
+    =================================================
+                Team Section Styling Ends
+    =================================================
+*/
+
+/* 
+    =================================================
+               Footer Section Styling Starts
+    =================================================
+*/
+#footer-section{
+        background-color: #010332;
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.quote{
+    color:white;
+    font-size: 2.5em;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: auto;
+}
+.footer-icons-container a{
+    color:#708090;
+    margin: 0.5em;
+}
+.footer-icons-container{
+    margin-top:1em;
+    font-size: 20px;
+    text-align: center;
+}
+.footer-icons-container a:hover{
+    transition: all 0.8s ease-in-out;
+    color:white;
+}
+
+.end-tag{
+    color:#ffffff;
+    margin:1em;
+    margin-bottom: 0.3em;
+    text-align:center;
+}
+.end-tag span{
+    text-decoration:line-through;
+    color:#2563EB;
+}
+.batch{
+    color:#b3bac7;
+    font-weight: 500;
+    text-align:center;
+}
+/* 
+    =================================================
+               Footer Section Styling Ends
+    =================================================
+*/
