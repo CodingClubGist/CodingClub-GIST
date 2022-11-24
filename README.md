@@ -2,4 +2,4 @@
 
 The Official Coding club website of Geethanjali Institute of Science and Technology
 
-Live Link : [Click Here](https://jagannath69.github.io/byte_cloud/)
+Live Link : [Click Here](https://codingclubgist.github.io/CodingClub-GIST/)
